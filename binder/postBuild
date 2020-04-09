@@ -1,3 +1,4 @@
 #!/bin/bash
 
 jupyter labextension install @jupyterlab/toc
+export PS1="\w$"

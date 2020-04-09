@@ -1,22 +1,25 @@
-# Installing packages from `apt` repositories
+# Test repository for making resources available to Carpentries Learners
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/zkamvar/test-apt-intstall-binder/master)
+To openthis repository with either RStudio or Jupyter Lab, click on one of these
+buttons:
 
-Sometimes you want packages that exist outside of the language-specific packaging
-ecosystems of Python/R/Julia. Binder makes it possible to `apt-install` packages
-from the ubuntu apt repository. This repository demonstrates how to do this by specifying
-names in an `apt.txt` file.
+Jupyter Lab: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/zkamvar/test-apt-intstall-binder/master?urlpath=lab)    
+RStudio: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/zkamvar/test-apt-intstall-binder/master?urlpath=rstudio)
 
-## Notes
-The `apt.txt` file should list all packages that your notebooks
-depend on, and they will be installed using:
+# About
 
-```
-apt-get install --yes --no-install-recommends
-```
+This repository can be built into a Binder repo by clicking on one of the 
+buttons above. The software installed is listed in the following files
 
-The base Binder image contains no extra dependencies, so be as
-explicit as possible in defining the packages that you need.
+ - apt.txt: apt packages to be installed (currently nano)
+ - environment.yml: python packages to be installed via anaconda (currently
+   matplotlib, numpy, and pandas).
+ - install.R: R script to install required packages (currently "here")
 
-In this example we include the tools `cowsay` and `lolcat` which will be installed in
-the environment, and our notebook uses them to show a colorful message.
+Please modify these packages for your workshop (especially R packages) because
+some of these require extra apt repositories and may take a long time to compile.
+
+Additionally, you will want to change the URL for the buttons so that the 
+learners have the correct lesson to work with. 
+
+
