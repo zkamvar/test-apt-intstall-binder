@@ -1,6 +1,6 @@
 # Installing packages from `apt` repositories
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/zkamvar/test-apt-install-binder/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/zkamvar/test-apt-intstall-binder/master)
 
 Sometimes you want packages that exist outside of the language-specific packaging
 ecosystems of Python/R/Julia. Binder makes it possible to `apt-install` packages
