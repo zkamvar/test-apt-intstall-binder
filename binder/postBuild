@@ -2,3 +2,5 @@
 
 jupyter labextension install @jupyterlab/toc
 export PS1="\w$"
+
+rm -rf .git/
